@@ -31,7 +31,7 @@ partC.get("/c/introduction/:articleName", (req, res) => __awaiter(void 0, void 0
     const { articleName } = req.params;
     const isValidName = (0, validation_1.validateName)(articleName);
     if (!isValidName) {
-        const message = `Article name can only are comprise of letters, hyphens (-), underscores (_) and numbers`;
+        const message = `Article name can only comprise of letters, hyphens (-), underscores (_) and numbers`;
         res.status(400).send(message);
         return;
     }
